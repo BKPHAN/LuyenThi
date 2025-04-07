@@ -1,0 +1,18 @@
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* cao hơn navbar nếu cần */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* hiệu ứng bóng */
+    background-color: #d2e6e9;
+}
+
+.custom-button{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: inline;
+    width: 120px;
+}

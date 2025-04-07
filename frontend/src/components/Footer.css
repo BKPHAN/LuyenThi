@@ -1,0 +1,54 @@
+/* Căn chỉnh Footer ở cuối trang */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo thân trang có chiều cao đủ lớn */
+}
+
+main {
+    flex-grow: 1; /* Nội dung chính chiếm không gian còn lại */
+}
+
+footer {
+    background-color: #d2e6e9;
+    margin-top: auto; /* Đảm bảo footer luôn nằm ở dưới cùng */
+    height: 300px;
+}
+
+/* Tùy chỉnh footer */
+footer .container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+footer .container div {
+    text-align: left;
+}
+
+footer .container h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+footer .container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .container ul li a {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+footer .container ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .text-center {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}

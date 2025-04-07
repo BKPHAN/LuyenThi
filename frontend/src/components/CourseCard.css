@@ -1,0 +1,32 @@
+
+.course-card {
+    cursor: pointer;
+    border-radius: var(--bs-border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-card:hover button {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.course-card button {
+    margin-left: 25%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.course-card button:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
