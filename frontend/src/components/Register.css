@@ -1,0 +1,144 @@
+/* Register.css */
+
+/* Tạo hiệu ứng cho container */
+.register-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #00bcd4, #8e44ad); /* Gradient nền đẹp */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card chứa form đăng ký */
+.register-card {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: #ffffff; /* Nền trắng cho card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng đổ mạnh hơn để tạo hiệu ứng 3D */
+  padding: 30px;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Tiêu đề form */
+h2 {
+  color: #007bff; /* Màu xanh đậm cho tiêu đề */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Nhãn cho các trường input */
+.form-label {
+  color: #6c757d; /* Màu xám cho nhãn */
+  font-weight: 600;
+}
+
+/* Định dạng input */
+input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+/* Hiệu ứng khi focus vào input */
+input.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none; /* Loại bỏ outline mặc định */
+}
+
+/* Nút Đăng Ký */
+button.register-btn {
+  background-color: #3498db; /* Màu xanh đẹp cho nút */
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Con trỏ thay đổi khi hover vào nút */
+  font-size: 16px;
+}
+
+/* Màu sắc cho nút khi hover */
+button.register-btn:hover {
+  background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Tạo khoảng cách giữa các trường trong form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Đường phân cách giữa các phần */
+.separator {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #888;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+/*!* Tạo hiệu ứng popup cho modal *!*/
+.modal-overlay-register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/*.close-button {*/
+/*  position: absolute;*/
+/*  top: 10px;*/
+/*  right: 15px;*/
+/*  background: transparent;*/
+/*  border: none;*/
+/*  font-size: 26px;*/
+/*  font-weight: bold;*/
+/*  color: #888;*/
+/*  cursor: pointer;*/
+/*  transition: color 0.2s ease;*/
+/*}*/
+
+/*.close-button:hover {*/
+/*  color: red;*/
+/*}*/
+
+/* Hiệu ứng fade-in cho modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
